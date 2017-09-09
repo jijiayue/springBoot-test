@@ -1,6 +1,5 @@
 package doem.controller;
 
-import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import doem.config.aop.Monitor;
@@ -30,45 +29,49 @@ public class IndexController {
 
     @RequestMapping(value = "/index/{id}")
     @CrossOrigin //跨域返回json注解
-    public Map<String,Object> view(@PathVariable Integer id) {
-        Map<String,Object> map = new HashMap<String,Object>();
-        map.put("id",id);
+    public Map<String, Object> view(@PathVariable Integer id) {
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("id", id);
         return map;
     }
-    @RequestMapping(value = "/index",method = RequestMethod.POST)
+
+    @RequestMapping(value = "/index", method = RequestMethod.POST)
     @ResponseBody //返回json注解
-    public Map<String,Object> index(Integer id) {
-        Map<String,Object> map = new HashMap<String,Object>();
-        map.put("id",id);
+    public Map<String, Object> index(Integer id) {
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("id", id);
         return map;
     }
+
     //mybaits测试
-    @RequestMapping(value = "/index",method = RequestMethod.GET)
+    @RequestMapping(value = "/index", method = RequestMethod.GET)
     public ModelAndView getindex(Integer id, ModelMap modelMap) {
         User user = userMapper.selectByPrimaryKey(new Long("1"));
-        modelMap.put("name","liuzhiqiang");
-        modelMap.put("user",user);
-        return new ModelAndView("index",modelMap);
+        modelMap.put("name", "liuzhiqiang");
+        modelMap.put("user", user);
+        return new ModelAndView("index", modelMap);
     }
+
     //aop redis测试
-    @Monitor(logTitle = "aop测试", logType = "aop",text = "12345678")//自定义注解
-    @RequestMapping(value = "/redis",method = RequestMethod.GET)
+    @Monitor(logTitle = "aop测试", logType = "aop", text = "12345678")//自定义注解
+    @RequestMapping(value = "/redis", method = RequestMethod.GET)
     public ModelAndView redis(Integer id, ModelMap modelMap) {
-        iRedisService.set("name",id.toString());
-        modelMap.put("redis",iRedisService.get("name"));
-        return new ModelAndView("index",modelMap);
+        iRedisService.set("name", id.toString());
+        modelMap.put("redis", iRedisService.get("name"));
+        return new ModelAndView("index", modelMap);
     }
+
     //分页插件测试
-    @RequestMapping(value = "/page",method = RequestMethod.GET)
-    public Map<String,Object> page(HttpServletRequest request, Integer pageNum, Integer pageSize) {
+    @RequestMapping(value = "/page", method = RequestMethod.GET)
+    public Map<String, Object> page(HttpServletRequest request, Integer pageNum, Integer pageSize) {
         pageNum = pageNum == null ? 1 : pageNum;
         pageSize = pageSize == null ? 10 : pageSize;
         PageHelper.startPage(pageNum, pageSize);
         List<User> list = userMapper.gitListUser();
         PageInfo pageInfo = new PageInfo(list);
         //Page page = (Page) list;
-        Map<String,Object> map = new HashMap<String,Object>();
-        map.put("PageInfo",pageInfo);
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("PageInfo", pageInfo);
         //map.put("Page",page);
         return map;
     }
