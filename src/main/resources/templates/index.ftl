@@ -7,8 +7,8 @@
 <body style="height:900px">
 <div class="wrap">
     ${name!""}
-    <#if user??>
-        ${user.userName!""}${user.password!""}
+    <#if SysUser??>
+        ${SysUser.userName!""}${SysUser.password!""}
     </#if>
     ${redis!""}
 </div>

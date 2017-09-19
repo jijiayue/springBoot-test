@@ -50,7 +50,13 @@
         </dependency>
         <!--freemarker模板引擎end-->
 
-
+        <!-- shiro -->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring</artifactId>
+            <version>1.4.0</version>
+        </dependency>
+        <!--end-->
 
         <!--mybatis-->
         <dependency>
