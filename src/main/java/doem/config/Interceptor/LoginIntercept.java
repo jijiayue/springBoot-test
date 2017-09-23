@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 public class LoginIntercept implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
+
         System.out.println(">>>MyInterceptor1>>>>>>>请求处理之前进行调用");
         return true;
     }

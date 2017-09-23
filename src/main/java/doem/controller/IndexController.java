@@ -49,6 +49,7 @@ public class IndexController {
         return map;
     }
 
+    @RequiresPermissions("sys:view")
     @RequestMapping(value = "/index", method = RequestMethod.POST)
     @ResponseBody //返回json注解
     public Map<String, Object> index(Integer id) {
@@ -93,17 +94,24 @@ public class IndexController {
 
 
 
-    @RequestMapping("/login")
-    public void loginUser(HttpServletResponse response,ModelMap modelMap,String loginName,String passWord,HttpSession session) {
+    @PostMapping("/login")
+    @CrossOrigin
+    public Map<String,Object> loginUser(HttpServletResponse response,ModelMap modelMap,String loginName,String passWord,HttpSession session) {
         UsernamePasswordToken usernamePasswordToken=new UsernamePasswordToken(loginName,passWord);
         Subject subject = SecurityUtils.getSubject();
+        Map<String,Object> map = new HashMap<String,Object>();
         try {
             subject.login(usernamePasswordToken);   //完成登录
             SysUser user=(SysUser) subject.getPrincipal();
+            iRedisService.set(user.getLoginName(),user.getId().toString());
             session.setAttribute("user", user);
-            response.sendRedirect("index");
+            // response.sendRedirect("index");
+            map.put("data","登陆成功");
+            return map;
         } catch(Exception e) {
             System.out.println(e);
+            map.put("data","登陆失败");
+            return map;
         }
 
     }

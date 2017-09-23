@@ -57,6 +57,12 @@
             <version>1.4.0</version>
         </dependency>
         <!--end-->
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.6</version>
+        </dependency>
 
         <!--mybatis-->
         <dependency>
@@ -87,6 +93,16 @@
             <groupId>org.kopitubruk.util</groupId>
             <artifactId>JSONUtil</artifactId>
             <version>1.10.4</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.10</version>
         </dependency>
     </dependencies>
     <build>
