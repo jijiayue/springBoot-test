@@ -1,5 +1,6 @@
 package doem.config.Shiro;
 
+import org.apache.shiro.cache.ehcache.EhCacheManager;
 import org.apache.shiro.spring.LifecycleBeanPostProcessor;
 import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
@@ -18,6 +19,14 @@ import java.util.Map;
  */
 @Configuration
 public class ShiroConfig {
+
+    @Bean
+    public EhCacheManager getEhCacheManager(){
+        EhCacheManager ehcacheManager = new EhCacheManager();
+        ehcacheManager.setCacheManagerConfigFile("classpath:ehcache-shiro.xml");
+        return ehcacheManager;
+    }
+
     @Bean
     public ShiroFilterFactoryBean shirFilter(SecurityManager securityManager) {
         System.out.println("ShiroConfiguration.shirFilter()");
@@ -44,8 +53,9 @@ public class ShiroConfig {
     }
 
     @Bean
-    public MyShiroRealm myShiroRealm(){
+    public MyShiroRealm myShiroRealm(EhCacheManager ehCacheManager){
         MyShiroRealm myShiroRealm = new MyShiroRealm();
+        myShiroRealm.setCacheManager(ehCacheManager);
         return myShiroRealm;
     }
 
@@ -53,7 +63,7 @@ public class ShiroConfig {
     @Bean
     public SecurityManager securityManager(){
         DefaultWebSecurityManager securityManager =  new DefaultWebSecurityManager();
-        securityManager.setRealm(myShiroRealm());
+        securityManager.setRealm(myShiroRealm(getEhCacheManager()));
         return securityManager;
     }
 
