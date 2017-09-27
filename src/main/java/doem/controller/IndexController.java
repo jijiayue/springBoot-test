@@ -2,27 +2,21 @@ package doem.controller;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.github.pagehelper.util.StringUtil;
+import doem.config.BaseController;
 import doem.config.aop.Monitor;
 import doem.config.redis.IRedisService;
 import doem.dao.UserMapper;
 import doem.model.SysUser;
 import doem.model.User;
 import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.authc.DisabledAccountException;
-import org.apache.shiro.authc.IncorrectCredentialsException;
-import org.apache.shiro.authc.UnknownAccountException;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
-import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.Subject;
-import org.apache.shiro.web.util.WebUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -34,15 +28,15 @@ import java.util.Map;
  * Created by JJJ on 2017/9/7.
  */
 @RestController
-public class IndexController {
+public class IndexController extends BaseController{
     @Autowired
     private UserMapper userMapper;
     @Autowired
     private IRedisService iRedisService;
 
-
+    @RequiresPermissions("sys:eeerdd")
     @RequestMapping(value = "/index/{id}")
-    @CrossOrigin //跨域返回json注解
+    //@CrossOrigin //跨域返回json注解
     public Map<String, Object> view(@PathVariable Integer id) {
         Map<String, Object> map = new HashMap<String, Object>();
         map.put("id", id);
@@ -94,7 +88,7 @@ public class IndexController {
 
 
 
-    @PostMapping("/login")
+    @GetMapping("/login")
     @CrossOrigin
     public Map<String,Object> loginUser(HttpServletResponse response,ModelMap modelMap,String loginName,String passWord,HttpSession session) {
         UsernamePasswordToken usernamePasswordToken=new UsernamePasswordToken(loginName,passWord);

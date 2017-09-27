@@ -3,17 +3,11 @@ package doem.config.Filter;
 /**
  * Created by JJJ on 2017/9/23.
  */
-import org.slf4j.LoggerFactory;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class SessionFilter implements Filter {
     @Override
