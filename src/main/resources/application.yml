@@ -13,9 +13,9 @@ spring:
     template-loader-path: classpath:/templates
 #druid数据源相关配置配置
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=UTF-8&amp;tinyInt1isBit=false
-    username: liuzhiqiang
-    password: 123456
+    url: jdbc:mysql://127.0.0.1:3306/dev?useUnicode=true&amp;characterEncoding=UTF-8&amp;tinyInt1isBit=false
+    username: root
+    password: Passw0rd
     driver-class-name: com.mysql.jdbc.Driver
     type: org.apache.tomcat.jdbc.pool.DataSource
 
@@ -23,6 +23,7 @@ spring:
     # 初始化大小，最小，最大
     initialSize: 5
     minIdle: 5
+    #最大连接数量
     maxActive: 20
     maxWait: 60000
     # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
@@ -50,6 +51,7 @@ spring:
   redis:
     hostName: 192.168.5.250
     port: 6379
+    # use dbIndex  默认 0
     database: 2
     password:
     pool:
@@ -60,8 +62,15 @@ spring:
     timeout: 5000
 #mybatis 配置信息
 mybatis:
-  type-aliases-package: doem.model
+  #对应我们的实体类所在的包
+  type-aliases-package: demo.model
   mapperLocations: classpath:/mappers/**/*.xml
+
+#  除了上面常见的两项配置，还有：
+#  mybatis.config：mybatis-config.xml配置文件的路径
+#  mybatis.typeHandlersPackage：扫描typeHandlers的包
+#  mybatis.checkConfigLocation：检查配置文件是否存在
+#  mybatis.executorType：设置执行模式（SIMPLE, REUSE, BATCH），默认为SIMPLE
 server:
   port: 8484
 logging:

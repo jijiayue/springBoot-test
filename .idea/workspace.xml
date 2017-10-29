@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2c635239-f6e2-46ea-9a0c-f3e09915f46b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/logback.xml" afterPath="$PROJECT_DIR$/log/logback.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mappers/SysRelationMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mappers/SysRelationMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mappers/SysRoleMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mappers/SysRoleMapper.xml" />
@@ -31,7 +30,6 @@
       <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/dao/SysUserMapper.java" afterPath="$PROJECT_DIR$/src/main/java/demo/dao/SysUserMapper.java" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/dao/UserMapper.java" afterPath="$PROJECT_DIR$/src/main/java/demo/dao/UserMapper.java" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/model/SysRelation.java" afterPath="$PROJECT_DIR$/src/main/java/demo/model/SysRelation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/model/SysRelationExample.java" afterPath="$PROJECT_DIR$/src/main/java/demo/model/SysRelationExample.java" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/model/SysRole.java" afterPath="$PROJECT_DIR$/src/main/java/demo/model/SysRole.java" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/model/SysRoleExample.java" afterPath="$PROJECT_DIR$/src/main/java/demo/model/SysRoleExample.java" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/model/SysRoleMenu.java" afterPath="$PROJECT_DIR$/src/main/java/demo/model/SysRoleMenu.java" />
@@ -82,7 +80,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SysRelationExample.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SysRelationExample.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/demo/model/SysRelationExample.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="104">
@@ -92,12 +90,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SysRoleMapper.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SysRoleMapper.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/SysRoleMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-              <folding />
+            <state relative-caret-position="130">
+              <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+              <folding>
+                <marker date="1509282697425" expanded="true" signature="4816:4919" ph="select from sys_role" />
+                <marker date="1509282697425" expanded="true" signature="5133:5190" ph="delete from " />
+                <marker date="1509282697425" expanded="true" signature="5412:5432" ph="delete from " />
+                <marker date="1509282697425" expanded="true" signature="8706:8735" ph="select count... sys_role" />
+                <marker date="1509282697425" expanded="true" signature="10599:11222" ph="update sys_r... " />
+                <marker date="1509282697425" expanded="true" signature="11551:12618" ph="update sys_r... " />
+                <marker date="1509282697425" expanded="true" signature="12836:13385" ph="update sys_r... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -947,7 +953,7 @@
       <workItem from="1507250491484" duration="28595000" />
       <workItem from="1507449690014" duration="628000" />
       <workItem from="1507971994561" duration="480000" />
-      <workItem from="1509281890894" duration="837000" />
+      <workItem from="1509281890894" duration="946000" />
     </task>
     <task id="LOCAL-00001" summary="连接池注释">
       <created>1507172735814</created>
@@ -956,15 +962,21 @@
       <option name="project" value="LOCAL" />
       <updated>1507172735814</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="改下名字">
+      <created>1509282765917</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1509282765917</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63382000" />
+    <option name="totallyTimeSpent" value="63491000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1008,7 +1020,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="连接池注释" />
-    <option name="LAST_COMMIT_MESSAGE" value="连接池注释" />
+    <MESSAGE value="改下名字" />
+    <option name="LAST_COMMIT_MESSAGE" value="改下名字" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1186,7 +1199,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1252,7 +1265,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1278,7 +1291,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1413,14 +1426,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/SysRoleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/SysRelationMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
@@ -1442,6 +1447,22 @@
         <state relative-caret-position="104">
           <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/SysRoleMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+          <folding>
+            <marker date="1509282697425" expanded="true" signature="4816:4919" ph="select from sys_role" />
+            <marker date="1509282697425" expanded="true" signature="5133:5190" ph="delete from " />
+            <marker date="1509282697425" expanded="true" signature="5412:5432" ph="delete from " />
+            <marker date="1509282697425" expanded="true" signature="8706:8735" ph="select count... sys_role" />
+            <marker date="1509282697425" expanded="true" signature="10599:11222" ph="update sys_r... " />
+            <marker date="1509282697425" expanded="true" signature="11551:12618" ph="update sys_r... " />
+            <marker date="1509282697425" expanded="true" signature="12836:13385" ph="update sys_r... " />
+          </folding>
         </state>
       </provider>
     </entry>

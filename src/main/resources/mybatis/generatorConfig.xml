@@ -17,13 +17,13 @@
                         password="123456">
         </jdbcConnection>
 
-        <javaModelGenerator targetPackage="doem.model" targetProject="src\main\java">
+        <javaModelGenerator targetPackage="demo.model" targetProject="src\main\java">
             <property name="trimStrings" value="true" />
         </javaModelGenerator>
 
         <sqlMapGenerator targetPackage="mappers"  targetProject="src\main\resources"/>
 
-        <javaClientGenerator type="XMLMAPPER" targetPackage="doem.dao"  targetProject="src\main\java"/>
+        <javaClientGenerator type="XMLMAPPER" targetPackage="demo.dao" targetProject="src\main\java"/>
 
         <table tableName="%">
             <generatedKey column="id" sqlStatement="Mysql"/>
