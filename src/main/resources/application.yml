@@ -72,6 +72,6 @@ mybatis:
 #  mybatis.checkConfigLocation：检查配置文件是否存在
 #  mybatis.executorType：设置执行模式（SIMPLE, REUSE, BATCH），默认为SIMPLE
 server:
-  port: 8484
+  port: 8787
 logging:
     config: log/logback.xml # 日志配置文件,Spring Boot默认使用classpath路径下的日志配置文件,如:logback.xml
