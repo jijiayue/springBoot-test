@@ -3,41 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="2c635239-f6e2-46ea-9a0c-f3e09915f46b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mappers/SysRelationMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mappers/SysRelationMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mappers/SysRoleMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mappers/SysRoleMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mappers/SysRoleMenuMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mappers/SysRoleMenuMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mappers/SysUserMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mappers/SysUserMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mybatis/generatorConfig.xml" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/generatorConfig.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/SpringBootDoemAppliction.java" afterPath="$PROJECT_DIR$/src/main/java/demo/SpringBootDoemAppliction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/config/BaseController.java" afterPath="$PROJECT_DIR$/src/main/java/demo/config/BaseController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/config/Filter/SessionFilter.java" afterPath="$PROJECT_DIR$/src/main/java/demo/config/Filter/SessionFilter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/config/Interceptor/LoginIntercept.java" afterPath="$PROJECT_DIR$/src/main/java/demo/config/Interceptor/LoginIntercept.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/config/Shiro/MyShiroRealm.java" afterPath="$PROJECT_DIR$/src/main/java/demo/config/Shiro/MyShiroRealm.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/config/Shiro/ShiroConfig.java" afterPath="$PROJECT_DIR$/src/main/java/demo/config/Shiro/ShiroConfig.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/config/Shiro/ShiroToken.java" afterPath="$PROJECT_DIR$/src/main/java/demo/config/Shiro/ShiroToken.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/config/WebMvcConfig.java" afterPath="$PROJECT_DIR$/src/main/java/demo/config/WebMvcConfig.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/config/aop/LogRecordAspect.java" afterPath="$PROJECT_DIR$/src/main/java/demo/config/aop/LogRecordAspect.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/config/aop/Monitor.java" afterPath="$PROJECT_DIR$/src/main/java/demo/config/aop/Monitor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/config/redis/IRedisService.java" afterPath="$PROJECT_DIR$/src/main/java/demo/config/redis/IRedisService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/config/redis/RedisConfig.java" afterPath="$PROJECT_DIR$/src/main/java/demo/config/redis/RedisConfig.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/config/redis/RedisServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/demo/config/redis/RedisServiceImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/controller/IndexController.java" afterPath="$PROJECT_DIR$/src/main/java/demo/controller/IndexController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/dao/SysRelationMapper.java" afterPath="$PROJECT_DIR$/src/main/java/demo/dao/SysRelationMapper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/dao/SysRoleMapper.java" afterPath="$PROJECT_DIR$/src/main/java/demo/dao/SysRoleMapper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/dao/SysRoleMenuMapper.java" afterPath="$PROJECT_DIR$/src/main/java/demo/dao/SysRoleMenuMapper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/dao/SysUserMapper.java" afterPath="$PROJECT_DIR$/src/main/java/demo/dao/SysUserMapper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/dao/UserMapper.java" afterPath="$PROJECT_DIR$/src/main/java/demo/dao/UserMapper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/model/SysRelation.java" afterPath="$PROJECT_DIR$/src/main/java/demo/model/SysRelation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/model/SysRole.java" afterPath="$PROJECT_DIR$/src/main/java/demo/model/SysRole.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/model/SysRoleExample.java" afterPath="$PROJECT_DIR$/src/main/java/demo/model/SysRoleExample.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/model/SysRoleMenu.java" afterPath="$PROJECT_DIR$/src/main/java/demo/model/SysRoleMenu.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/model/SysRoleMenuExample.java" afterPath="$PROJECT_DIR$/src/main/java/demo/model/SysRoleMenuExample.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/model/SysUser.java" afterPath="$PROJECT_DIR$/src/main/java/demo/model/SysUser.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/model/SysUserExample.java" afterPath="$PROJECT_DIR$/src/main/java/demo/model/SysUserExample.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/demo/model/User.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/doem/model/UserExample.java" afterPath="$PROJECT_DIR$/src/main/java/demo/model/UserExample.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -62,11 +31,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SysRelationMapper.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SysRelationMapper.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/SysRelationMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="321" column="49" lean-forward="false" selection-start-line="321" selection-start-column="49" selection-end-line="321" selection-end-column="49" />
+            <state relative-caret-position="364">
+              <caret line="14" column="71" lean-forward="true" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
               <folding>
                 <marker date="1509282697185" expanded="true" signature="4649:4756" ph="select from sys_relation" />
                 <marker date="1509282697185" expanded="true" signature="4970:5031" ph="delete from " />
@@ -84,17 +53,17 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/demo/model/SysRelationExample.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="104">
-              <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+              <caret line="6" column="33" lean-forward="false" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SysRoleMapper.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SysRoleMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/SysRoleMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+            <state relative-caret-position="338">
+              <caret line="13" column="69" lean-forward="true" selection-start-line="13" selection-start-column="69" selection-end-line="13" selection-end-column="69" />
               <folding>
                 <marker date="1509282697425" expanded="true" signature="4816:4919" ph="select from sys_role" />
                 <marker date="1509282697425" expanded="true" signature="5133:5190" ph="delete from " />
@@ -235,7 +204,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
+    <option name="width" value="1932" />
     <option name="height" value="1053" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -440,9 +409,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -479,7 +448,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Unnamed">
+  <component name="RunManager" selected="Spring Boot.test">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -905,14 +874,6 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <configuration default="false" name="Unnamed" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="demo.SpringBootDoemAppliction" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <module name="SpringBootDoem" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="false" name="RedisConfig" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="demo.config.redis.RedisConfig" />
@@ -920,9 +881,17 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="false" name="test" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="demo.SpringBootDoemAppliction" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <module name="SpringBootDoem" />
+      <envs />
+      <method />
+    </configuration>
     <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Spring Boot.Unnamed" />
-      <item index="1" class="java.lang.String" itemvalue="Spring Boot.RedisConfig" />
+      <item index="0" class="java.lang.String" itemvalue="Spring Boot.RedisConfig" />
+      <item index="1" class="java.lang.String" itemvalue="Spring Boot.test" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -953,7 +922,8 @@
       <workItem from="1507250491484" duration="28595000" />
       <workItem from="1507449690014" duration="628000" />
       <workItem from="1507971994561" duration="480000" />
-      <workItem from="1509281890894" duration="946000" />
+      <workItem from="1509281890894" duration="994000" />
+      <workItem from="1509971884953" duration="232000" />
     </task>
     <task id="LOCAL-00001" summary="连接池注释">
       <created>1507172735814</created>
@@ -969,14 +939,22 @@
       <option name="project" value="LOCAL" />
       <updated>1509282765917</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="改下名字">
+      <created>1509282848276</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1509282848276</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63491000" />
+    <option name="totallyTimeSpent" value="63771000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1053" extended-state="6" />
+    <frame x="-8" y="-8" width="1932" height="1053" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -989,8 +967,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46203905" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4617068" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -998,9 +977,8 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3584288" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18656716" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18856838" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1008,8 +986,8 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1166,7 +1144,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="65" column="24" lean-forward="false" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1174,7 +1151,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="464" column="7" lean-forward="false" selection-start-line="464" selection-start-column="7" selection-end-line="464" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1190,7 +1166,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1208,7 +1183,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1216,7 +1190,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1224,7 +1197,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1232,7 +1204,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1240,7 +1211,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1256,7 +1226,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1264,9 +1233,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1282,7 +1248,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1290,9 +1255,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1300,9 +1262,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1310,9 +1269,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1320,9 +1276,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1330,9 +1283,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1340,9 +1290,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1350,7 +1297,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1358,7 +1304,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1366,7 +1311,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1374,7 +1318,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1382,7 +1325,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1390,7 +1332,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1398,7 +1339,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1406,7 +1346,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1414,7 +1353,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1426,34 +1364,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/SysRelationMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="321" column="49" lean-forward="false" selection-start-line="321" selection-start-column="49" selection-end-line="321" selection-end-column="49" />
-          <folding>
-            <marker date="1509282697185" expanded="true" signature="4649:4756" ph="select from sys_relation" />
-            <marker date="1509282697185" expanded="true" signature="4970:5031" ph="delete from " />
-            <marker date="1509282697185" expanded="true" signature="5257:5281" ph="delete from " />
-            <marker date="1509282697185" expanded="true" signature="8159:8192" ph="select count... sys_relation" />
-            <marker date="1509282697185" expanded="true" signature="9822:10328" ph="update sys_r... " />
-            <marker date="1509282697185" expanded="true" signature="10661:11522" ph="update sys_r... " />
-            <marker date="1509282697185" expanded="true" signature="11744:12190" ph="update sys_r... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/model/SysRelationExample.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
-          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+          <caret line="6" column="33" lean-forward="false" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/SysRoleMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        <state relative-caret-position="338">
+          <caret line="13" column="69" lean-forward="true" selection-start-line="13" selection-start-column="69" selection-end-line="13" selection-end-column="69" />
           <folding>
             <marker date="1509282697425" expanded="true" signature="4816:4919" ph="select from sys_role" />
             <marker date="1509282697425" expanded="true" signature="5133:5190" ph="delete from " />
@@ -1462,6 +1384,22 @@
             <marker date="1509282697425" expanded="true" signature="10599:11222" ph="update sys_r... " />
             <marker date="1509282697425" expanded="true" signature="11551:12618" ph="update sys_r... " />
             <marker date="1509282697425" expanded="true" signature="12836:13385" ph="update sys_r... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mappers/SysRelationMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="14" column="71" lean-forward="true" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
+          <folding>
+            <marker date="1509282697185" expanded="true" signature="4649:4756" ph="select from sys_relation" />
+            <marker date="1509282697185" expanded="true" signature="4970:5031" ph="delete from " />
+            <marker date="1509282697185" expanded="true" signature="5257:5281" ph="delete from " />
+            <marker date="1509282697185" expanded="true" signature="8159:8192" ph="select count... sys_relation" />
+            <marker date="1509282697185" expanded="true" signature="9822:10328" ph="update sys_r... " />
+            <marker date="1509282697185" expanded="true" signature="10661:11522" ph="update sys_r... " />
+            <marker date="1509282697185" expanded="true" signature="11744:12190" ph="update sys_r... " />
           </folding>
         </state>
       </provider>
