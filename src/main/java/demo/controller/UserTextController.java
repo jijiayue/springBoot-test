@@ -13,7 +13,7 @@ import java.util.*;
  */
 @RestController
 @RequestMapping(value="/users")
-public class ApiTextController {
+public class UserTextController {
     static Map<Long, User> users = Collections.synchronizedMap(new HashMap<Long, User>());
     @ApiOperation(value="获取用户列表", notes="")
     @RequestMapping(value={""}, method=RequestMethod.GET)
