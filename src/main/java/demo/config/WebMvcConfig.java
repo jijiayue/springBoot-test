@@ -17,7 +17,7 @@ import java.util.List;
  */
 @Configuration
 public class WebMvcConfig extends WebMvcConfigurerAdapter {
-    //静态资源放过
+    //配置自定义静态资源路径
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
