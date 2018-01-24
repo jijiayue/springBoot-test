@@ -13,9 +13,9 @@ spring:
     template-loader-path: classpath:/templates
 #druid数据源相关配置配置
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/dev?useUnicode=true&amp;characterEncoding=UTF-8&amp;tinyInt1isBit=false
+    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=UTF-8&amp;tinyInt1isBit=false
     username: root
-    password: Passw0rd
+    password: 123456
     driver-class-name: com.mysql.jdbc.Driver
     type: org.apache.tomcat.jdbc.pool.DataSource
 
@@ -60,6 +60,16 @@ spring:
       maxIdle: 100
       minIdle: 0
     timeout: 5000
+  activiti:
+    #默认，JobExecutor在流程引擎启动时就会激活。 如果不想在流程引擎启动后自动激活JobExecutor，可以设置
+    job-executor-activate: false
+#    Ø  none: 不保存任何历史记录，可以提高系统性能；
+#    Ø  activity：保存所有的流程实例、任务、活动信息；
+#    Ø  audit：也是Activiti的默认级别，保存所有的流程实例、任务、活动、表单属性；
+#    Ø  full：最完整的历史记录，除了包含audit级别的信息之外还能保存详细，例如：流程变量。
+    history-level: audit
+
+
 #mybatis 配置信息
 mybatis:
   #对应我们的实体类所在的包
@@ -75,5 +85,7 @@ server:
   port: 8787
 logging:
     config: log/logback.xml # 日志配置文件,Spring Boot默认使用classpath路径下的日志配置文件,如:logback.xml
+
+
 
 
