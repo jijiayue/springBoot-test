@@ -68,7 +68,17 @@ spring:
 #    Ø  audit：也是Activiti的默认级别，保存所有的流程实例、任务、活动、表单属性；
 #    Ø  full：最完整的历史记录，除了包含audit级别的信息之外还能保存详细，例如：流程变量。
     history-level: audit
+    # 自动部署验证设置:true-开启（默认）、false-关闭
+    check-process-definitions: false
+    # asyncExecutorActivate是指activiti在流程引擎启动就激活AsyncExecutor,异步：true-开启（默认）、false-关闭
+    async-executor-activate: false
+    # asyncExecutorEnabled属性设置设置true后将代替那些老的Job executor
+    async-executor-enabled: false
 
+    #  安全访问
+#security:
+#   basic:
+#      enabled: false
 
 #mybatis 配置信息
 mybatis:
@@ -85,7 +95,10 @@ server:
   port: 8787
 logging:
     config: log/logback.xml # 日志配置文件,Spring Boot默认使用classpath路径下的日志配置文件,如:logback.xml
-
+    level:
+      ROOT: DEBUG
+      demo: DEBUG  # 要打印的log目录
+      org.mongodb.driver: INFO
 
 
 
