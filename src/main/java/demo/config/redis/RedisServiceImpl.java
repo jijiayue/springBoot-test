@@ -25,6 +25,8 @@ public class RedisServiceImpl implements IRedisService {
             public Boolean doInRedis(RedisConnection connection) throws DataAccessException {
                 RedisSerializer<String> serializer = redisTemplate.getStringSerializer();
                 connection.set(serializer.serialize(key), serializer.serialize(value));
+                // 设置失效时间
+                // connection.setEx(serializer.serialize(key),Long.parseLong("30"), serializer.serialize(value));
                 return true;
             }
         });
