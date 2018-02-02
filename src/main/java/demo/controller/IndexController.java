@@ -5,7 +5,7 @@ import com.github.pagehelper.PageInfo;
 import demo.config.BaseController;
 import demo.config.aop.Monitor;
 import demo.config.redis.IRedisService;
-import demo.dao.UserMapper;
+import demo.dao.test1.User1Mapper;
 import demo.model.SysUser;
 import demo.model.User;
 import org.apache.shiro.SecurityUtils;
@@ -30,7 +30,7 @@ import java.util.Map;
 @RestController
 public class IndexController extends BaseController{
     @Autowired
-    private UserMapper userMapper;
+    private User1Mapper userMapper;
     @Autowired
     private IRedisService iRedisService;
 

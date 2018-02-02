@@ -13,40 +13,52 @@ spring:
     template-loader-path: classpath:/templates
 #druid数据源相关配置配置
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=UTF-8&amp;tinyInt1isBit=false
-    username: root
-    password: 123456
-    driver-class-name: com.mysql.jdbc.Driver
-    type: org.apache.tomcat.jdbc.pool.DataSource
+      test1:
+        url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=UTF-8&amp;tinyInt1isBit=false
+        username: root
+        password: 123456
+        driverClassName: com.mysql.jdbc.Driver
+        type: org.apache.tomcat.jdbc.pool.DataSource
+      test2:
+        url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=UTF-8&amp;tinyInt1isBit=false
+        username: root
+        password: 123456
+        driverClassName: com.mysql.jdbc.Driver
+        type: org.apache.tomcat.jdbc.pool.DataSource
+#      url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=UTF-8&amp;tinyInt1isBit=false
+#      username: root
+#      password: 123456
+#      driver-class-name: com.mysql.jdbc.Driver
+#      type: org.apache.tomcat.jdbc.pool.DataSource
 
-    #连接池的配置信息
-    # 初始化大小，最小，最大
-    initialSize: 5
-    minIdle: 5
-    #最大连接数量
-    maxActive: 20
-    maxWait: 60000
-    # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
-    timeBetweenEvictionRunsMillis: 60000
-    # 配置一个连接在池中最小生存的时间，单位是毫秒
-    minEvictableIdleTimeMillis: 300000
-    #验证查询语句
-    validationQuery: SELECT 1 FROM DUAL
-    #空闲时测试
-    testWhileIdle: true
-    #调用前测试（正式系统影响性能）
-    testOnBorrow: false
-    #调用后测试（正式系统影响性能）
-    testOnReturn: false
-    # 打开PSCache，并且指定每个连接上PSCache的大小
-    poolPreparedStatements: true
-    maxPoolPreparedStatementPerConnectionSize: 20
-    # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
-    filters: stat,wall,log4j
-    # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
-    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
-    # 合并多个DruidDataSource的监控数据
-    #spring.datasource.useGlobalDataSourceStat=true
+#    #连接池的配置信息
+#    # 初始化大小，最小，最大
+#    initialSize: 5
+#    minIdle: 5
+#    #最大连接数量
+#    maxActive: 20
+#    maxWait: 60000
+#    # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+#    timeBetweenEvictionRunsMillis: 60000
+#    # 配置一个连接在池中最小生存的时间，单位是毫秒
+#    minEvictableIdleTimeMillis: 300000
+#    #验证查询语句
+#    validationQuery: SELECT 1 FROM DUAL
+#    #空闲时测试
+#    testWhileIdle: true
+#    #调用前测试（正式系统影响性能）
+#    testOnBorrow: false
+#    #调用后测试（正式系统影响性能）
+#    testOnReturn: false
+#    # 打开PSCache，并且指定每个连接上PSCache的大小
+#    poolPreparedStatements: true
+#    maxPoolPreparedStatementPerConnectionSize: 20
+#    # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+#    filters: stat,wall,log4j
+#    # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
+#    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+#    # 合并多个DruidDataSource的监控数据
+#    #spring.datasource.useGlobalDataSourceStat=true
   #redis配置数据
   redis:
     hostName: 192.168.5.250
@@ -96,9 +108,11 @@ server:
 logging:
     config: log/logback.xml # 日志配置文件,Spring Boot默认使用classpath路径下的日志配置文件,如:logback.xml
     level:
-      ROOT: DEBUG
+      ROOT: INFO
       demo: DEBUG  # 要打印的log目录
       org.mongodb.driver: INFO
-
+security:
+  basic:
+    enabled: false
 
 
