@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2c635239-f6e2-46ea-9a0c-f3e09915f46b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -1500,7 +1499,7 @@
       <workItem from="1517536748174" duration="1470000" />
       <workItem from="1517539508787" duration="4673000" />
       <workItem from="1517557882993" duration="4854000" />
-      <workItem from="1517564091049" duration="1159000" />
+      <workItem from="1517564091049" duration="1167000" />
     </task>
     <task id="LOCAL-00001" summary="连接池注释">
       <created>1507172735814</created>
@@ -1593,7 +1592,14 @@
       <option name="project" value="LOCAL" />
       <updated>1517565155800</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="再试 多数据源">
+      <created>1517565256086</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1517565256086</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1629,7 +1635,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120773000" />
+    <option name="totallyTimeSpent" value="120781000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
