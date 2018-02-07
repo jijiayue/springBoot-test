@@ -4,29 +4,60 @@
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <generatorConfiguration>
     <context id="MysqlContext" targetRuntime="MyBatis3" defaultModelType="flat">
-        <property name="beginningDelimiter" value="`"/>
-        <property name="endingDelimiter" value="`"/>
 
-        <commentGenerator>
-            <property name="suppressDate" value="true"/>
+        <commentGenerator type="org.mybatis.generator.internal.SCCommentGenerator">
+            <property name="javaFileEncoding" value="UTF-8"/>
+            <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
+            <property name="suppressAllComments" value="false" />
+            <property name="suppressDate" value="true" />
         </commentGenerator>
 
+        <!--数据库链接地址账号密码-->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3306/test"
-                        userId="liuzhiqiang"
+                        connectionURL="jdbc:mysql://192.168.5.250:3306/pms2"
+                        userId="root"
                         password="123456">
         </jdbcConnection>
-
-        <javaModelGenerator targetPackage="demo.model" targetProject="src\main\java">
-            <property name="trimStrings" value="true" />
+        <javaTypeResolver type="org.mybatis.generator.internal.types.JavaTypeResolverDefaultImpl">
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+        <!--生成Model类存放位置-->
+        <javaModelGenerator targetPackage="demo.model" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
         </javaModelGenerator>
 
-        <sqlMapGenerator targetPackage="mappers"  targetProject="src\main\resources"/>
+        <!--生成映射文件存放位置-->
+        <sqlMapGenerator targetPackage="mappers" targetProject="src/main/resources">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
 
-        <javaClientGenerator type="XMLMAPPER" targetPackage="demo.dao" targetProject="src\main\java"/>
+        <!--<property name="beginningDelimiter" value="`"/>-->
+        <!--<property name="endingDelimiter" value="`"/>、-->
 
-        <table tableName="%">
-            <generatedKey column="id" sqlStatement="Mysql"/>
+        <!--生成Dao类存放位置-->
+        <!-- 客户端代码，生成易于使用的针对Model对象和XML配置文件 的代码
+                type="ANNOTATEDMAPPER",生成Java Model 和基于注解的Mapper对象
+                type="MIXEDMAPPER",生成基于注解的Java Model 和相应的Mapper对象
+                type="XMLMAPPER",生成SQLMap XML文件和独立的Mapper接口
+        -->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="demo.dao" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+
+        <!--<table tableName="%">-->
+            <!--<generatedKey column="id" sqlStatement="Mysql"/>-->
+        <!--</table>-->
+
+        <!--生成对应表及类名-->
+        <table tableName="air_conditioner_meter"
+               domainObjectName="AirConditioner"
+               enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false">
+            <!--<columnOverride column="power_type" jdbcType="TINYINT" javaType="java.lang.Integer"/>-->
         </table>
     </context>
 </generatorConfiguration>
